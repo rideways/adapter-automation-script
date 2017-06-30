@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="a39c41a2-136e-4591-a407-921b75417101" activeEnvironment="Default" name="Talixo" resourceRoot="" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="TestSuite"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="b8543d4e-27da-4aca-82dc-f16cb5b546cd" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint></con:endpoints><con:resource name="Search" path="/rates" id="3d953a35-ef41-4b92-b030-55561c49c534"><con:settings/><con:parameters/><con:method name="Rates 1" id="b80ca274-6ed2-42f7-b1ab-707e82b7a818" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:rat="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates">rat:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>502</con:status><con:params/><con:element xmlns:rat="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates">rat:Fault</con:element></con:representation><con:request name="Request 1" id="c0657081-1166-4589-b033-996bb20484e5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Partner" value="3134ea82-f4e9-489e-9" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2018-01-01 10:00:00",
+  "pickupLatitude":"53.353889",
+  "pickupLongitude":"-2.275",
+  "pickupCountry":"GB",
+  "pickupCity":"London",
+  "pickupPostcode":"M90 1QX",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffLatitude":"53.4810409",
+  "dropoffLongitude":"-2.2426773",
+  "dropoffCountry":"GB",
+  "dropoffCity":"London",
+  "dropoffPostcode":"M2 2AN",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":1
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="bookings" path="/bookings/" id="dba883a7-6496-4a50-8872-a25ce09fd0e4"><con:settings/><con:parameters/><con:method name="Method 1" id="ff2c0f1f-6079-4e07-9968-3040e54cbf2b" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>502</con:status><con:params/><con:element xmlns:book="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/">book:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="4dfec1ac-a365-4864-914f-6d249a8a99f7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"reference":"talixo_f1718fb4-5c45-492a-a925-96c5912936b1",
+"title":"Miss",
+"firstname":"sayali",
+"lastname":"sinkar",
+"email":"sayalis@cybage.com",
+"telephone":"+447708556655",
+"meetAndGreetMessage":"你好！你好吗见面和留言见面和留言见面和留言",
+"commentsForDriver":"你好！你好吗见面和留言见面和留言见面和留言"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="GET_booking" path="/bookings/${Search#Response#$results[0].reference}" id="b74bf661-6e36-4cef-832c-00c3343c5f98"><con:settings/><con:parameters/><con:method name="Method 1" id="5bdd0b35-fd6e-4d53-9cfc-20ad0dff90a2" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>201</con:status><con:params/><con:element xmlns:tal="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/talixo_f1718fb4-5c45-492a-a925-96c5912936b1">tal:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>404 502</con:status><con:params/><con:element xmlns:sup="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/">sup:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>555</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="56c0a7e7-3653-457e-aa12-caaa931db592" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request/><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/talixo_f1718fb4-5c45-492a-a925-96c5912936b1</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource><con:resource name="DriverDetails" path="/driverdetails/${Get_Booking#response#$.supplierReference}" id="8e596a4f-7154-446a-8c7f-f9d3377e1929"><con:settings/><con:parameters/><con:method name="Method 1" id="4b353caa-e394-4822-9a00-26d856761ee2" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>502 404</con:status><con:params/><con:element xmlns:driv="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/driverdetails">driv:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="4a261da4-a277-4640-9d56-8ef4afc26484" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"supplierReference":"80GA36B",
+"carRegistration":"A12345",
+"carMake":"Toyota",
+"carModel":"Fortuner",
+"driverName":"Abhii",
+"driverPhone":"+413556565656"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/driverdetails</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="GET_driverdetails" path="/bookings/driverdetails?references=${Search#Response#$results[0].reference}" id="22243c3a-fde0-4201-bbb4-9ac260837a23"><con:settings/><con:parameters/><con:method name="Method 1" id="0074f9ba-809f-4fb0-a04b-76568587e550" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>200 201</con:status><con:params/><con:element xmlns:driv="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/talixo_f1718fb4-5c45-492a-a925-96c5912936b1/driverdetails">driv:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="d649dc3a-c276-414d-a29f-f8213cdbd57a" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request/><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/talixo_f1718fb4-5c45-492a-a925-96c5912936b1/driverdetails</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="Delete" path="/bookings/${Search#Response#$results[0].reference}" id="95a8a705-1c5b-463f-bd0a-879d7a1c2f1d"><con:settings/><con:parameters/><con:method name="Method 1" id="199bfe85-0ea8-4144-b5ca-8403a27544de" method="DELETE"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="9b8cd0dc-bb97-4304-b056-96f7c800ba97" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request/><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/talixo_f1718fb4-5c45-492a-a925-96c5912936b1</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="4216be4b-25fc-4568-aa35-1fcf5bc1acd4" name="TestSuite"><con:description>TestSuite generated for REST Service [http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="149b8fae-1f5a-45f0-bdca-bf05e6ddbd7a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="HappyFlow" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Rates" id="1143a458-6d3d-4a1b-aede-3c4c5d5aad2a"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/rates" methodName="Rates 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Rates" id="c0657081-1166-4589-b033-996bb20484e5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2018-01-01 10:00:00",
+  "pickupLatitude":"53.353889",
+  "pickupLongitude":"-2.275",
+  "pickupCountry":"GB",
+  "pickupCity":"London",
+  "pickupPostcode":"M90 1QX",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffLatitude":"53.4810409",
+  "dropoffLongitude":"-2.2426773",
+  "dropoffCountry":"GB",
+  "dropoffCity":"London",
+  "dropoffPostcode":"M2 2AN",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":1
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="8c059b6c-1895-4a89-9f94-4db8e62d8f6f" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="bookings" id="c93a0a09-9dc0-476a-b31b-9c1dd033eb30"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/bookings/" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="bookings" id="4dfec1ac-a365-4864-914f-6d249a8a99f7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"reference":"${Rates#Response#$results[0].reference}",
+"title":"Miss",
+"firstname":"sayali",
+"lastname":"sinkar",
+"email":"sayalis@cybage.com",
+"telephone":"+447708556655",
+"meetAndGreetMessage":"你好！你好吗见面和留言见面和留言见面和留言",
+"commentsForDriver":"你好！你好吗见面和留言见面和留言见面和留言"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="d12343c7-e725-4167-9fe6-31a6647cb8d4" name="Valid HTTP Status Codes"><con:configuration><codes>202</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="delay" name="1000" id="a81bac85-a244-4245-9a78-911d70a7c9d6"><con:settings/><con:config><delay>1000</delay></con:config></con:testStep><con:testStep type="restrequest" name="GET_booking" id="df7cdd00-3b92-4558-ad9d-0b37fbdf7765"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/bookings/${Search#Response#$results[0].reference}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET_booking" id="56c0a7e7-3653-457e-aa12-caaa931db592" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request/><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="190ca3bf-72db-4f5b-81bf-853af7bd4603" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="driverdetails" id="ecd94bf7-5992-48e2-b91c-cffee3b2b23b"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/driverdetails/${Get_Booking#response#$.supplierReference}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="driverdetails" id="4a261da4-a277-4640-9d56-8ef4afc26484" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"supplierReference":"${GET_booking#Response#$.supplierReference}",
+"carRegistration":"A12345",
+"carMake":"Toyota",
+"carModel":"Fortuner",
+"driverName":"Abhii",
+"driverPhone":"+413556565656"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/driverdetails</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="745a3aff-a452-4d24-bbb8-f225bfba6ed9" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GET_driverdetails" id="aac33e88-671f-423d-9f8e-5b5f95f677cf"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/bookings/driverdetails?references=${Search#Response#$results[0].reference}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET_driverdetails" id="d649dc3a-c276-414d-a29f-f8213cdbd57a" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request/><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/talixo_0661e118-db8c-4e6e-ad33-dcfddd3da470/driverdetails</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="f13afe5c-f9d9-4c12-8ac8-ae862d6b6d95" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Delete" id="0b393297-15d1-450d-acdc-6622554b05bd"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/bookings/${Search#Response#$results[0].reference}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete" id="9b8cd0dc-bb97-4304-b056-96f7c800ba97" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request/><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/talixo_0661e118-db8c-4e6e-ad33-dcfddd3da470</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="5b884153-8758-4deb-9dc9-641be4cb5530" name="Valid HTTP Status Codes"><con:configuration><codes>204</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="1f6ecf8e-2973-47a7-b412-462e69dc51cb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Past_Date" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Rates" id="ec3a4889-f0a2-44de-8234-552ec6981d12"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Rates" id="95be4e52-6404-4ac8-ac1c-4dfcbcfbf20f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2015-01-01 10:00:00",
+  "pickupLatitude":"53.353889",
+  "pickupLongitude":"-2.275",
+  "pickupCountry":"GB",
+  "pickupCity":"London",
+  "pickupPostcode":"M90 1QX",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffLatitude":"53.4810409",
+  "dropoffLongitude":"-2.2426773",
+  "dropoffCountry":"GB",
+  "dropoffCity":"London",
+  "dropoffPostcode":"M2 2AN",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":1
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Invalid HTTP Status Codes" id="f9a4531b-26d5-452d-b2bd-6f84bd661248" name="Invalid HTTP Status Codes"><con:configuration><codes>4</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="2d35395f-242e-4531-a489-0b3647313ef3" name="Contains"><con:configuration><token>Pickup date must be in the future,Pickup date must be in the future,Pickup date must be in the future</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="9c44959c-1034-4d61-a6b3-773fc9fcb752" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ErrorCode" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Rates" id="bee68046-e803-488c-97fc-39ca024b6c3f"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Rates" id="7154b37a-3ef6-4e5a-b69e-6a7b755952bc" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2018-01-01 10:00:00",
+  "pickupLatitude":"53.353889",
+  "pickupLongitude":"-2.275",
+  "pickupCountry":"GB",
+  "pickupCity":"London",
+  "pickupPostcode":"M90 1QX",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffLatitude":"53.4810409",
+  "dropoffLongitude":"-2.2426773",
+  "dropoffCountry":"GB",
+  "dropoffCity":"London",
+  "dropoffPostcode":"M2 2AN",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":1,
+  "luggage": 0,
+  "sport_luggage": 0,
+  "animals": 0,
+  "children_seat_1": "",
+  "children_seat_2": ""
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="853b7edb-406c-40f8-bc02-e999fa3fa92a" name="Search"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="0d90fb66-2dce-4bb6-a2c2-1411cf9d27e1" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-64-CorrectDate" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="7293b0c2-ec28-41a0-bd70-3f0f88f33307"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="839d4911-8f2e-4497-aeb3-eefcc773911e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2017-12-19 23:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropoffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":2
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="ac4926fc-9ce8-432b-abd5-e1e502e0800a" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="fcd08948-8078-4c1c-a0ec-92a3eafa59df" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-156- PastDate" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="b7e858bb-689f-475e-bad8-9598efff5b6b"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="307c1bca-4cb5-47ab-ab80-268ddd3192c8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2015-12-19 23:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropoffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":2
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="c4e354ee-76d9-4ca7-87d8-c698d6a53928" name="Valid HTTP Status Codes"><con:configuration><codes>502</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="85c0f933-28bb-4e85-b599-3316adb96446" name="Contains"><con:configuration><token>4</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="36bc29fc-973a-4573-8d32-f4bba64f3b45" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-53- MandatoryField_errorMessage" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="0711732e-52e3-4db3-8202-a63928081192"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="8825bee6-3253-4407-a02f-329bb9b74baf" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2017-12-19 23:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+ 
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropoffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":2
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Simple Contains" id="d46e1f23-b5c2-444f-a20c-cf56dcaad85a" name="Contains"><con:configuration><token>1</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="43eacdbd-ae77-44ed-86bb-53a5e15de23a" name="Valid HTTP Status Codes"><con:configuration><codes>502</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="d2ecb242-5096-43a2-974f-bc5cb3e371c3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-41-SearchReq&amp;Resp" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="876c1843-c66a-43bd-bb0c-85e54a56d3a8"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="2406f44b-19a3-4034-ad78-f770671b6b2a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2017-12-19 23:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropoffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":2
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Simple Contains" id="3384b140-e48f-4ad4-ac88-4add252c402d" name="Contains"><con:configuration><token>reference</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="51615882-762a-44cf-b9d3-ce0b48dc1da7" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="95417ffc-cd61-4ff0-8894-216833d27da4" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-52-MaxPassenger>8_errorMessage" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="76b3eaf0-1b1c-41aa-92fb-e4d5d37f13e8"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="088e167d-c4d1-4ba0-b658-0d33107a15cd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2017-12-19 18:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropofffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":9
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="0a87c56f-803f-4749-b633-29def91a37c3" name="Valid HTTP Status Codes"><con:configuration><codes>502</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="f29523b5-6486-4f0e-b2b0-7ad7eac70842" name="Contains"><con:configuration><token>maximum passengers cannot be more than 8</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="08ab8bbc-dc96-4541-9b15-4a7d25ed78c7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-52-PassengerLessThan8" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="ad4a7747-ccff-40aa-963d-9a1eeaabb43b"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="f23cb8a2-0cf6-4678-85dd-8f081342674c" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2017-12-19 18:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropofffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":3
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="061156bd-d1d2-46a9-b291-6befc2b8e852" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="75beb2b6-a6da-4239-b07f-e115ac263bfd" name="Contains"><con:configuration><token>[minPassengers]:[1]</token><ignoreCase>false</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="840a4b19-43e2-4610-a5a6-41af9010bb6d" name="Booking"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="0a3f772c-145b-4103-887f-a448a104388d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-49-CorrectBooking&amp;Get_Booking" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Search" id="3a22ebb6-9bdc-4f9d-8908-2841907e53a7"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Search" id="bee95176-5503-4358-8f71-d57595f6aa92" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2017-12-19 23:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropoffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":2
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="e6560377-eb90-4d0c-b565-58845d039f3c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Booking" id="ee7cec53-0e7d-491c-be8b-fe0841f32a62"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/bookings/" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Booking" id="4dfec1ac-a365-4864-914f-6d249a8a99f7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"reference":"${Search#response#$results[0].reference}",
+"title":"Miss",
+"firstname":"sayali",
+"lastname":"sinkar",
+"email":"sayalis@cybage.com",
+"telephone":"+447708556655",
+"meetAndGreetMessage":"你好！你好吗见面和留言见面和留言见面和留言",
+"commentsForDriver":"你好！你好吗见面和留言见面和留言见面和留言"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="41031e9f-7286-4c0e-b968-c4d567d05fc4" name="Valid HTTP Status Codes"><con:configuration><codes>202</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Get_Booking" id="6b3344d4-cab3-4e78-a68f-b5c1fbb09568"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/bookings/${Search#Response#$results[0].reference}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get_Booking" id="56c0a7e7-3653-457e-aa12-caaa931db592" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request/><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/talixo_f1718fb4-5c45-492a-a925-96c5912936b1</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="a231f510-9424-42bd-81da-a460be73dd45" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="29067353-31d4-4dfe-8af1-0103d3ec8b41" name="Contains"><con:configuration><token>supplierReference</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="DriverDetails" id="9e4de959-c638-4736-93b0-85abe1210e31"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/driverdetails/${Get_Booking#response#$.supplierReference}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="DriverDetails" id="4a261da4-a277-4640-9d56-8ef4afc26484" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"supplierReference":"${Get_Booking#response#$supplierReference}",
+"carRegistration":"1003311",
+"carMake":"Toyota",
+"carModel":"Fortuner",
+"driverName":"Abhii",
+"driverPhone":"+413556565656"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/driverdetails</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="9c3c16f4-a720-4ea4-b23c-3720c8747744" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Get_DriverDetails" id="b64651aa-97be-483f-bd09-a05b2e2812e7"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/bookings/driverdetails?references=${Search#Response#$results[0].reference}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get_DriverDetails" id="d649dc3a-c276-414d-a29f-f8213cdbd57a" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request/><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/talixo_f1718fb4-5c45-492a-a925-96c5912936b1/driverdetails</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="07459a0e-3cb9-4707-bdbc-cc4e79d7e0fc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-50-Booking-ErrorMessage" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Search" id="019113e9-47b9-450f-b6da-dad3d0726860"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Search" id="bee95176-5503-4358-8f71-d57595f6aa92" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2017-12-19 23:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropoffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":2
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="e6560377-eb90-4d0c-b565-58845d039f3c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Booking" id="7ec4c0a8-dcb4-4b17-b90b-9559ed8ea4e8"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/bookings/" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Booking" id="4dfec1ac-a365-4864-914f-6d249a8a99f7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"reference":"${Search#response#$results[0].reference}",
+
+"firstname":"sayali",
+"lastname":"sinkar",
+"email":"sayalis@cybage.com",
+"telephone":"+447708556655",
+"meetAndGreetMessage":"你好！你好吗见面和留言见面和留言见面和留言",
+"commentsForDriver":"你好！你好吗见面和留言见面和留言见面和留言"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="41031e9f-7286-4c0e-b968-c4d567d05fc4" name="Valid HTTP Status Codes"><con:configuration><codes>502</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="f4b51892-3bc4-45c5-9fa3-bf9410a10e88" name="Contains"><con:configuration><token>1</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="75e50082-e6e8-4696-8bfe-b231c3c68aed" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-62-SamebookingMultipleTimes" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Search" id="6f18e09f-1a22-43bd-b060-05420ffabf8c"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Search" id="bee95176-5503-4358-8f71-d57595f6aa92" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2017-12-19 23:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropoffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":2
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="e6560377-eb90-4d0c-b565-58845d039f3c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Booking" id="11bfdf75-7905-49ca-8faf-9d42900552c6"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/bookings/" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Booking" id="4dfec1ac-a365-4864-914f-6d249a8a99f7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"reference":"${Search#response#$results[0].reference}",
+"title":"Miss",
+"firstname":"sayali",
+"lastname":"sinkar",
+"email":"sayalis@cybage.com",
+"telephone":"+447708556655",
+"meetAndGreetMessage":"你好！你好吗见面和留言见面和留言见面和留言",
+"commentsForDriver":"你好！你好吗见面和留言见面和留言见面和留言"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="41031e9f-7286-4c0e-b968-c4d567d05fc4" name="Valid HTTP Status Codes"><con:configuration><codes>202</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Booking1" id="e2941641-e1e2-481b-ad07-84cc72fe1725"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/bookings/" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Booking1" id="4dfec1ac-a365-4864-914f-6d249a8a99f7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"reference":"${Search#response#$results[0].reference}",
+"title":"Miss",
+"firstname":"sayali",
+"lastname":"sinkar",
+"email":"sayalis@cybage.com",
+"telephone":"+447708556655",
+"meetAndGreetMessage":"你好！你好吗见面和留言见面和留言见面和留言",
+"commentsForDriver":"你好！你好吗见面和留言见面和留言见面和留言"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="41031e9f-7286-4c0e-b968-c4d567d05fc4" name="Valid HTTP Status Codes"><con:configuration><codes>202</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="delay" name="3000" id="ef8650d3-f80f-45d5-bae4-ffff3e0d9e65"><con:settings/><con:config><delay>1000</delay></con:config></con:testStep><con:testStep type="restrequest" name="Get_Booking" id="f0dc3006-50b4-4691-893d-7efc106d6b43"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/bookings/${Search#Response#$results[0].reference}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get_Booking" id="56c0a7e7-3653-457e-aa12-caaa931db592" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request/><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/talixo_f1718fb4-5c45-492a-a925-96c5912936b1</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="a231f510-9424-42bd-81da-a460be73dd45" name="Valid HTTP Status Codes"><con:configuration><codes>502</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="29067353-31d4-4dfe-8af1-0103d3ec8b41" name="Contains"><con:configuration><token>5</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="abff8907-a157-4fed-9076-0adfd9502c7c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-61-EmailValidation" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Search" id="043c4307-efd5-487c-a18c-66fb86b58d7d"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Search" id="bee95176-5503-4358-8f71-d57595f6aa92" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2017-12-19 23:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropoffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":2
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="e6560377-eb90-4d0c-b565-58845d039f3c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Booking" id="2efc53e6-66d1-4b73-9225-77e2d6bcbe80"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/bookings/" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Booking" id="4dfec1ac-a365-4864-914f-6d249a8a99f7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"reference":"${Search#response#$results[0].reference}",
+"title":"Miss",
+"firstname":"sayali",
+"lastname":"sinkar",
+
+"telephone":"+447708556655",
+"meetAndGreetMessage":"你好！你好吗见面和留言见面和留言见面和留言",
+"commentsForDriver":"你好！你好吗见面和留言见面和留言见面和留言"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="41031e9f-7286-4c0e-b968-c4d567d05fc4" name="Valid HTTP Status Codes"><con:configuration><codes>502</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="1c8b5f03-43df-4de5-96bb-b162be189639" name="Contains"><con:configuration><token>email cannot be null</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="973363af-bbc1-4de7-9163-1375d7f3d728" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-59-ErrorCode-First&amp;LastName" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Search" id="020d2f63-bfe9-4844-8f6a-12d1ea909062"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Search" id="bee95176-5503-4358-8f71-d57595f6aa92" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2017-12-19 23:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropoffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":2
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="e6560377-eb90-4d0c-b565-58845d039f3c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Booking" id="f74b82a8-05d6-4d5c-8a25-1a4825d97d80"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/bookings/" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Booking" id="4dfec1ac-a365-4864-914f-6d249a8a99f7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"reference":"${Search#response#$results[0].reference}",
+"title":"Miss",
+
+"lastname":"sinkar",
+"email":"sayalis@cybage.com",
+"telephone":"+447708556655",
+"meetAndGreetMessage":"你好！你好吗见面和留言见面和留言见面和留言",
+"commentsForDriver":"你好！你好吗见面和留言见面和留言见面和留言"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="41031e9f-7286-4c0e-b968-c4d567d05fc4" name="Valid HTTP Status Codes"><con:configuration><codes>502</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="690cf6fe-3078-47c0-ba23-56689802b2b2" name="Contains"><con:configuration><token>firstname cannot be null</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5148ff20-8207-460d-af64-9afbf00652ff" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-57-ValidFirst&amp;LastName" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Search" id="5645f2bc-3001-4724-bc39-19e52455979b"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Search" id="bee95176-5503-4358-8f71-d57595f6aa92" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2017-12-19 23:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropoffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":2
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="e6560377-eb90-4d0c-b565-58845d039f3c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Booking" id="0b3c523c-0b24-42e0-ada7-fc1161e35f2f"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/bookings/" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Booking" id="4dfec1ac-a365-4864-914f-6d249a8a99f7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"reference":"${Search#response#$results[0].reference}",
+"title":"Miss",
+"firstname":"sayali",
+"lastname":"sinkar",
+"email":"sayalis@cybage.com",
+"telephone":"+447708556655",
+"meetAndGreetMessage":"你好！你好吗见面和留言见面和留言见面和留言",
+"commentsForDriver":"你好！你好吗见面和留言见面和留言见面和留言"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="41031e9f-7286-4c0e-b968-c4d567d05fc4" name="Valid HTTP Status Codes"><con:configuration><codes>202</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="3d0e16d3-4f99-4ff4-8c7c-34c4480e4217" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-58-TelephoneErrorCode" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Search" id="752b9c40-a6df-4457-a03b-b9d6123a5d21"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Search" id="bee95176-5503-4358-8f71-d57595f6aa92" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2017-12-19 23:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropoffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":2
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="e6560377-eb90-4d0c-b565-58845d039f3c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Booking" id="50b54f9d-37d7-4e43-bf23-f93b51e93cc0"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" resourcePath="/bookings/" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Booking" id="4dfec1ac-a365-4864-914f-6d249a8a99f7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"reference":"${Search#response#$results[0].reference}",
+"title":"Miss",
+"firstname":"sayali",
+"lastname":"sinkar",
+"email":"sayalis@cybage.com",
+"telephone":"+447708556655",
+"meetAndGreetMessage":"你好！你好吗见面和留言见面和留言见面和留言",
+"commentsForDriver":"你好！你好吗见面和留言见面和留言见面和留言"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="41031e9f-7286-4c0e-b968-c4d567d05fc4" name="Valid HTTP Status Codes"><con:configuration><codes>202</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="0d7d5c17-445a-455c-b102-7b83cfd889a2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-63,65,66-GetBooking" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Search" id="955477e4-861b-41fb-9f57-34e3582bd7d6"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Search" id="b4b84f80-fe08-4862-88c3-9102a0651faa" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2017-12-19 23:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropoffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":2
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="e57ae871-e62b-4f2c-a1a2-36a87a52267b" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Booking" id="043f0eb7-a10f-41a5-a9d3-f5d6047efe70"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Method 1" resourcePath="/bookings/" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Booking" id="979906e4-6df7-4c30-9511-592aac4a5218" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"reference":"${Search#response#$results[0].reference}",
+"title":"Miss",
+"firstname":"sayali",
+"lastname":"sinkar",
+"email":"sayalis@cybage.com",
+"telephone":"+447708556655",
+"meetAndGreetMessage":"你好！你好吗见面和留言见面和留言见面和留言",
+"commentsForDriver":"你好！你好吗见面和留言见面和留言见面和留言"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="a007a6ac-2284-4a90-96e6-007f2c8ccbf3" name="Valid HTTP Status Codes"><con:configuration><codes>202</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Get_Booking" id="b26e4b03-baf4-47a4-be48-19f75d16874f"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Method 1" resourcePath="/bookings/${Search#Response#$results[0].reference}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get_Booking" id="469b0157-8375-40f2-a6a7-b6973823dc6d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request/><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/talixo_6969203f-c21a-467f-9285-c9a90cfb3066</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="6dd11a79-fd3d-4b1d-b1ce-444da339bbeb" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="981330e2-4e71-434e-9e72-ddebdc4e87d8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-145-SupportsDifferentLanguages" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Search" id="bcecd6a0-bf93-4356-8c31-3a162a15ba1c"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Search" id="610d3776-18a7-45b5-9fdc-dd04fc404ea1" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2017-12-19 23:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropoffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":2
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="0e4022c1-8510-4b84-b40e-fa62ccc6927b" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Booking" id="1c5bdce4-219b-4681-a012-a5c334fd6bbd"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Method 1" resourcePath="/bookings/" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Booking" id="d8cb2f79-5d43-4cf5-b999-7bdedb0cc50a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"reference":"${Search#response#$results[0].reference}",
+"title":"Miss",
+"firstname":"Саялы",
+"lastname":"путает",
+"email":"sayalis@cybage.com",
+"telephone":"+447708556655",
+"pickupFlightNumber":"4U7 344",
+"pickupTerminal":"T2",
+"pickupFlightArrivalTime":"2017-10-15 10:00:00",
+"dropoffFlightNumber":"",
+"dropoffTerminal":"",
+"dropoffFlightDepartureTime":"",
+"meetAndGreetMessage":"你好！你好吗见面和留言见面和留言见面和留言",
+"commentsForDriver":"你好！你好吗见面和留言见面和留言见面和留言"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="1a8f0463-aab3-4e72-ae6d-14e1d0a7d425" name="Valid HTTP Status Codes"><con:configuration><codes>202</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="f54dbf0d-6a56-4490-8b34-a4f92ef4edcf" name="DriverDetails"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="b2c05702-22e4-45a7-82d9-c284332a81fa" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-69 &amp; 70-Post&amp; Get_DriverDetails" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Search" id="992c9b32-7178-4c09-a580-648de7fbcc4e"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Search" id="145e524a-933b-45ae-bbd3-65ca0cf35a53" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2017-12-19 23:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropoffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":2
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="bd089cd4-7900-4745-b5a1-581886a0f458" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Booking" id="ee1c91a7-e413-48d4-afad-d5c820c42725"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Method 1" resourcePath="/bookings/" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Booking" id="145e524a-933b-45ae-bbd3-65ca0cf35a53" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"reference":"${Search#response#$results[0].reference}",
+"title":"Miss",
+"firstname":"sayali",
+"lastname":"sinkar",
+"email":"sayalis@cybage.com",
+"telephone":"+447708556655",
+"meetAndGreetMessage":"你好！你好吗见面和留言见面和留言见面和留言",
+"commentsForDriver":"你好！你好吗见面和留言见面和留言见面和留言"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="a109728b-fdc9-48d2-a855-a2b3f20cb02e" name="Valid HTTP Status Codes"><con:configuration><codes>202</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="delay" name="9000" id="aeaf9457-98cc-4d00-9dba-4a2db8c4500a"><con:settings/><con:config><delay>1000</delay></con:config></con:testStep><con:testStep type="restrequest" name="GET_Booking" id="5028465a-f5fd-4e10-9ffb-e0cc5429d44f"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Method 1" resourcePath="/bookings/${Search#Response#$results[0].reference}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET_Booking" id="3a3e92bb-9d2b-4e8c-bba0-253fa86027e0" mediaType="application/json"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request/><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/talixo_10d82968-f86b-4b68-b83a-ea8ba30f0e68</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="2f6b7276-5ba7-4640-b721-7969506f0948" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="DriverDetails" id="282a34d9-0e68-4118-a6b6-bd2211f1c591"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Method 1" resourcePath="/driverdetails/${Get_Booking#response#$.supplierReference}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="DriverDetails" id="356c91d2-d622-4a69-9da4-28d17f3dde0b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>	
+{
+"supplierReference":"${GET_Booking#response#$.supplierReference}",
+"carRegistration":"1Ab12",
+"carMake":"Toyota",
+"carModel":"Fortuner",
+"driverName":"sunil",
+"driverPhone":"+413556565656"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/driverdetails/AY25WRY</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="a00aa18f-50fd-4a70-aee3-2fcd021df3ef" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GET_DriverDetails" id="cf16d939-fcec-4c49-a017-497fd19c2a50"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Method 1" resourcePath="/bookings/driverdetails?references=${Search#Response#$results[0].reference}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET_DriverDetails" id="864d5760-b751-45df-a620-142b3c39dcac" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request/><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/driverdetails</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="d19b033f-6f23-45e0-8ef2-e9579d57a250" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="42680e71-6538-4f22-ad60-e6e226f38dff" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-391-Get_Without_PostMethod" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Search" id="77934ea3-aad9-4a77-b87e-c37114db9794"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Search" id="145e524a-933b-45ae-bbd3-65ca0cf35a53" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2017-12-19 23:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropoffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":2
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="bd089cd4-7900-4745-b5a1-581886a0f458" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Booking" id="c508415b-b41f-4dc1-9215-5560f7953c2b"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Method 1" resourcePath="/bookings/" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Booking" id="145e524a-933b-45ae-bbd3-65ca0cf35a53" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"reference":"${Search#response#$results[0].reference}",
+"title":"Miss",
+"firstname":"sayali",
+"lastname":"sinkar",
+"email":"sayalis@cybage.com",
+"telephone":"+447708556655",
+"meetAndGreetMessage":"你好！你好吗见面和留言见面和留言见面和留言",
+"commentsForDriver":"你好！你好吗见面和留言见面和留言见面和留言"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="a109728b-fdc9-48d2-a855-a2b3f20cb02e" name="Valid HTTP Status Codes"><con:configuration><codes>202</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="delay" name="9000" id="64d5624c-bf96-4fa3-b335-996bd650140d"><con:settings/><con:config><delay>1000</delay></con:config></con:testStep><con:testStep type="restrequest" name="GET_Booking" id="33ee81aa-c620-44fe-b1d2-81a9fdbb6a03"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Method 1" resourcePath="/bookings/${Search#Response#$results[0].reference}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET_Booking" id="3a3e92bb-9d2b-4e8c-bba0-253fa86027e0" mediaType="application/json"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request/><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/talixo_10d82968-f86b-4b68-b83a-ea8ba30f0e68</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="2f6b7276-5ba7-4640-b721-7969506f0948" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GET_DriverDetails" id="1cf07951-2e0d-4e8c-8c7c-8133040d4067"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Method 1" resourcePath="/bookings/driverdetails?references=${Search#Response#$results[0].reference}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET_DriverDetails" id="864d5760-b751-45df-a620-142b3c39dcac" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request/><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/driverdetails</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="d19b033f-6f23-45e0-8ef2-e9579d57a250" name="Valid HTTP Status Codes"><con:configuration><codes>204</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="4540bbb4-e3e5-453a-95d7-d74d43146223" name="Cancel"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="b9eeba18-4ec2-49ac-a60d-7d77c06fedb8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TAL-117 &amp; 120- Cancellation of successful booking" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Search" id="72668122-be4f-440a-a477-e022cf867c46"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Rates 1" resourcePath="/rates" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Search" id="eacdb4a2-ff10-4303-9dfc-5bdc48cbeb1e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+  "pickupDateTime":"2017-12-19 23:30:00",
+  "pickupCountry":"GB",
+  "pickupCity":"Manchester",
+  "pickupPostcode":"M90 1QX",
+  "pickupName":"Manchester Airport",
+  "pickupGooglePlaceId":"ChIJxZPY38BSekgR4KXk5UeCC4s",
+  "pickupFlightNumber":"4U7 344",
+  "dropoffCountry":"GB",
+  "dropoffCity":"Manchester",
+  "dropoffPostcode":"M60 7RA",
+  "dropoffName":"Manchester Piccadilly, Manchester M60 7RA, UK",
+  "dropoffGooglePlaceId":"ChIJz_QdBZaxe0gRl_20P0F2my0",
+  "drivingDistanceKm":22.7,
+  "passengers":2
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/rates</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="ba2bed5c-fec5-4bc8-993a-1f99981b121d" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Booking" id="6fcf5ad9-9c3c-47cd-b6ce-b4c32597ada6"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Method 1" resourcePath="/bookings/" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Booking" id="86b7cd94-b9d1-44ac-ab77-3afd5c9dffd0" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request>{
+"reference":"${Search#response#$results[0].reference}",
+"title":"Miss",
+"firstname":"sayali",
+"lastname":"sinkar",
+"email":"sayalis@cybage.com",
+"telephone":"+447708556655",
+"meetAndGreetMessage":"你好！你好吗见面和留言见面和留言见面和留言",
+"commentsForDriver":"你好！你好吗见面和留言见面和留言见面和留言"
+}</con:request><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="93e519e3-6fae-414c-968a-4a0fb620df62" name="Valid HTTP Status Codes"><con:configuration><codes>202</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GET_Booking" id="10199e22-c138-45de-9c2e-24d360b76939"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Method 1" resourcePath="/bookings/${Search#Response#$results[0].reference}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET_Booking" id="ee642f4e-1495-4583-bd06-b9121cfa5743" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request/><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/talixo_9ca9901b-a893-4993-85fd-65aae2b17598</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="3c5cf0ab-f112-4031-9715-f63f9a30ad19" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Cancel" id="22210e4a-e39d-4dd1-9752-67cd60a9703f"><con:settings/><con:config service="http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080" methodName="Method 1" resourcePath="/bookings/${Search#Response#$results[0].reference}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Cancel" id="d823915c-736f-4102-a68b-dc3ab1fd97c7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me:8080</con:endpoint><con:request/><con:originalUri>http://suppint-talixo.us-west-2-dev.ext.dev.someonedrive.me/bookings/talixo_9ca9901b-a893-4993-85fd-65aae2b17598</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="761040c4-426a-40a3-a766-ce6b889dcb57" name="Valid HTTP Status Codes"><con:configuration><codes>204</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
